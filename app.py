@@ -22,7 +22,13 @@ st.set_page_config(
 )
 
 
-DATA_PATH = Path(__file__).parent / "data" / "amazon.csv"
+APP_DIR = Path(__file__).parent
+DATA_CANDIDATES = [
+    APP_DIR / "data" / "amazon.csv",
+    APP_DIR / "amazon.csv",
+    Path.cwd() / "data" / "amazon.csv",
+    Path.cwd() / "amazon.csv",
+]
 COLORWAY = ["#2563eb", "#16a34a", "#f59e0b", "#dc2626", "#7c3aed", "#0891b2"]
 px.defaults.template = "plotly_white"
 px.defaults.color_discrete_sequence = COLORWAY
@@ -89,7 +95,15 @@ def short_product_name(name: str, limit: int = 58) -> str:
 
 @st.cache_data
 def load_data() -> pd.DataFrame:
-    df = pd.read_csv(DATA_PATH)
+    data_path = next((path for path in DATA_CANDIDATES if path.exists()), None)
+    if data_path is None:
+        st.error(
+            "Dataset file not found. Please upload amazon.csv either inside "
+            "data/amazon.csv or next to app.py in your GitHub repository."
+        )
+        st.stop()
+
+    df = pd.read_csv(data_path)
     df["actual_price_num"] = df["actual_price"].apply(clean_money)
     df["discounted_price_num"] = df["discounted_price"].apply(clean_money)
     df["discount_percentage_num"] = df["discount_percentage"].apply(clean_percent)
