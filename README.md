@@ -1,4 +1,4 @@
-## 📊  Amazon Product Price Analysis
+# 📊  Amazon Product Price Analysis
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
@@ -10,15 +10,15 @@ PricePulse is an end-to-end **Amazon Product Price Intelligence Dashboard** dash
 
 ---
 
-###  Live Demo
+## 🚀 Live Demo
 
- **Runnable App**
+🌐 **Runnable App**
 
 https://amazon-appuct-price-analysis-khsy88kepjcrgppbzbzi5m.streamlit.app/
 
 ---
 
-### 📌 Features
+## 📌 Features
 
 * 📈 Executive dashboard with KPIs
 * 💰 Product price analysis
@@ -32,7 +32,7 @@ https://amazon-appuct-price-analysis-khsy88kepjcrgppbzbzi5m.streamlit.app/
 
 ---
 
-### 📊 Exploratory Data Analysis (EDA)
+## 📊 Exploratory Data Analysis (EDA)
 
 The dashboard includes:
 
@@ -50,7 +50,7 @@ The dashboard includes:
 
 ---
 
-### 🤖 Machine Learning
+## 🤖 Machine Learning
 
 The application uses a **Random Forest Regressor** to predict discounted product prices.
 
@@ -64,9 +64,16 @@ The application uses a **Random Forest Regressor** to predict discounted product
 * Model Evaluation
 * Price Prediction
 
+### Evaluation Metrics
+
+* MAE
+* MSE
+* RMSE
+* R² Score
+
 ---
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 * Python
 * Pandas
@@ -78,7 +85,7 @@ The application uses a **Random Forest Regressor** to predict discounted product
 
 ---
 
-### 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 amazon-price-analysis/
@@ -95,7 +102,7 @@ amazon-price-analysis/
 
 ---
 
-### ⚙️ Installation
+## ⚙️ Installation
 
 ```bash
 git clone https://github.com/your-username/amazon-price-analysis.git
@@ -109,7 +116,7 @@ streamlit run app.py
 
 ---
 
-### ☁️ Deploy on Streamlit Community Cloud
+## ☁️ Deploy on Streamlit Community Cloud
 
 1. Push the project to GitHub.
 2. Open Streamlit Community Cloud.
@@ -119,7 +126,7 @@ streamlit run app.py
 
 ---
 
-### 📷 Dashboard Highlights
+## 📷 Dashboard Highlights
 
 * Executive Summary
 * Product Price Intelligence
@@ -131,7 +138,7 @@ streamlit run app.py
 
 ---
 
-### 🎯 Future Improvements
+## 🎯 Future Improvements
 
 * Price Trend Forecasting
 * Product Recommendation System
@@ -142,13 +149,13 @@ streamlit run app.py
 
 ---
 
-### 📄 License
+## 📄 License
 
 This project is intended for educational, learning, and portfolio purposes.
 
 ---
 
-### 👨‍💻 Author
+## 👨‍💻 Author
 
 **Abhishek Akhand**
 
