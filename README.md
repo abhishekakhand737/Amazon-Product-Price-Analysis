@@ -105,7 +105,7 @@ amazon-price-analysis/
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/amazon-price-analysis.git
+git clone https://github.com/abhishekakhand737/amazon-price-analysis.git
 
 cd amazon-price-analysis
 
